@@ -1,16 +1,3 @@
-# Step 1: Create an empty dictionary to represent the game library
-game_library = {}
-
-# Step 2: Implement functions to manage the library
-def add_game(title, genre, release_year, platforms):
-    game_info = {
-        "genre": genre,
-        "release_year": release_year,
-        "platforms": platforms
-    }
-    game_library[title] = game_info
-    print(f"Game '{title}' added to the library.")
-
 def remove_game(title):
     if title in game_library:
         del game_library[title]
